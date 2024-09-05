@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Teste target sistemas</title>
+</head>
+<body>
+   <h2> 1. Observe o trecho de código abaixo:</h2>
+   <p>int indice = 13, SOMA = 0, K = 0;
+    Enquanto K < indice faça { K = K + 1; soma = soma + K; }
+    Imprimir(SOMA);
+    Ao final do processamento, qual será o valor da variável SOMA?</p>
+
+    <!-- Questão 1 -->
+    <div class="section">
+        <p>1. Valor da variável SOMA</p>
+        <button onclick="indice()">Calcular Valor</button>
+        <p id="resultado1"></p>
+    </div>
+
+    <h2> 2. Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores</h2> <p>(exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.</p>
+    </h2>
+
+    <!-- Questão 2 -->
+    <div class="section">
+        <p>2. Verificação de Número na Sequência de Fibonacci</p>
+        <input type="number" id="fibNumero" placeholder="Digite um número">
+        <button onclick="Fibonacci()">Verificar</button>
+        <p id="resultado2"></p>
+    </div>
+
+    <!-- Questão 3 -->
+    <h2> 3. Dado um vetor que guarda o valor de faturamento diário de uma distribuidora, faça um programa, na linguagem que desejar, que calcule e retorne:</h2>
+    <p>O menor valor de faturamento ocorrido em um dia do mês; <br>
+        • O maior valor de faturamento ocorrido em um dia do mês; <br>
+        • Número de dias no mês em que o valor de faturamento diário foi superior à média mensal.</p>
+    <div class="section">
+        <p>Faturamento Diário</p>
+        <textarea id="faturamentoJson" rows="5" placeholder='Digite o JSON dos faturamentos, ex: [{"dia": 1, "valor": 1000}, {"dia": 2, "valor": 1500}]'></textarea>
+        <button onclick="Faturamento()">Calcular</button>
+        <p id="resultado3"></p>
+    </div>
+
+    <!-- Questão 4 -->
+     <h2> 4. Dado o valor de faturamento mensal de uma distribuidora, detalhado por estado:</h2>
+     • SP – R$67.836,43 <br>
+     • RJ – R$36.678,66 <br>
+     • MG – R$29.229,88 <br>
+     • ES – R$27.165,48 <br>
+     • Outros – R$19.849,53
+    <div class="section">
+        <p>Percentual de Representação por Estado</p>
+        <button onclick="Percentual()">Calcular Percentual</button>
+        <p id="resultado4"></p>
+    </div>
+
+    <!-- Questão 5 -->
+    <div class="section">
+        <h2>5. Escreva um programa que inverta os caracteres de um string.</h2>
+        <p> Inversão de String</>
+        <input type="text" id="stringInput" placeholder="Digite uma string">
+        <button onclick="inverterCaractere()">Inverter</button>
+        <p id="resultado5"></p>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
